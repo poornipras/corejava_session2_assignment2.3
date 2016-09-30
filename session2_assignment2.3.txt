@@ -1,0 +1,46 @@
+
+2.3 Write a program to print the following pattern:
+    a
+  a b a
+ a b c b a
+  a b a
+    a
+
+(Sorry i tried...could not get the desired output...kindly help)
+
+
+package session2corejava;
+
+public class abcprint {
+	public static void main(String[] args) {
+		String s="a";
+		String temp,reverse,temp1;	
+		temp=reverse=temp1="";
+		
+		int alpha=97;
+		System.out.println(s);
+		temp=s;
+		for(int i=0;i<2;i++)
+		  {
+			
+	      	alpha++;	  	
+	      		      	
+			 for(int j=temp.length()-1;j>=0;j--)
+             {
+              	reverse=reverse+temp.charAt(j);	
+		     	
+             }
+			    temp=temp+(char)alpha;
+			    
+			    temp1=temp+reverse;
+				System.out.println(temp1);    
+	      	
+		}
+		
+
+
+		System.out.println("");		
+		
+		}
+}
+
